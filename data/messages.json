@@ -1,0 +1,149 @@
+[
+  {
+    "id": "msg_1789984498593_rck4p",
+    "sender": "user_1789984490007_8phxn",
+    "senderName": "ThanhDat",
+    "receiver": "user_1789984446724_887gg",
+    "text": "heloo",
+    "isPrivate": true,
+    "createdAt": "2026-09-21T09:54:58.593Z"
+  },
+  {
+    "id": "msg_1789984505634_ip0mn",
+    "sender": "user_1789984446724_887gg",
+    "senderName": "Admin",
+    "receiver": "user_1789984490007_8phxn",
+    "text": "hello",
+    "isPrivate": true,
+    "createdAt": "2026-09-21T09:55:05.634Z"
+  },
+  {
+    "id": "msg_1789984514673_7n7pd",
+    "sender": "user_1789984490007_8phxn",
+    "senderName": "ThanhDat",
+    "receiver": "user_1789984446724_887gg",
+    "text": "bạn khỏe không",
+    "isPrivate": true,
+    "createdAt": "2026-09-21T09:55:14.673Z"
+  },
+  {
+    "id": "msg_1789984524817_asady",
+    "sender": "user_1789984446724_887gg",
+    "senderName": "Admin",
+    "receiver": "user_1789984490007_8phxn",
+    "text": "tôi khỏe",
+    "isPrivate": true,
+    "createdAt": "2026-09-21T09:55:24.817Z"
+  },
+  {
+    "id": "msg_1789985071303_gv7bg",
+    "sender": "user_1789984446724_887gg",
+    "senderName": "Admin",
+    "receiver": null,
+    "text": "👍",
+    "isPrivate": false,
+    "createdAt": "2026-09-21T10:04:31.303Z",
+    "isPinned": false
+  },
+  {
+    "id": "msg_1789985274481_4hqbr",
+    "sender": "user_1789984446724_887gg",
+    "senderName": "Admin",
+    "receiver": null,
+    "text": "hello wolrd",
+    "isPrivate": false,
+    "createdAt": "2026-09-21T10:07:54.481Z",
+    "isPinned": false
+  },
+  {
+    "id": "msg_1789985293006_4b7yl",
+    "sender": "user_1789984490007_8phxn",
+    "senderName": "ThanhDat",
+    "receiver": null,
+    "text": "hello bạn",
+    "isPrivate": false,
+    "createdAt": "2026-09-21T10:08:13.006Z"
+  },
+  {
+    "id": "msg_1789988455735_e1cym",
+    "sender": "user_1789984446724_887gg",
+    "senderUserId": "user_1789984446724_887gg",
+    "senderName": "Admin",
+    "receiver": null,
+    "text": "hello bạn",
+    "isPrivate": false,
+    "isPinned": false,
+    "isDeleted": false,
+    "replyTo": {
+      "id": "msg_1789985293006_4b7yl",
+      "senderName": "ThanhDat",
+      "text": "hello bạn"
+    },
+    "createdAt": "2026-09-21T11:00:55.735Z"
+  },
+  {
+    "id": "msg_1789989752331_dqt3x",
+    "sender": "user_1789984446724_887gg",
+    "senderUserId": "user_1789984446724_887gg",
+    "senderName": "Admin",
+    "receiver": "user_1789984490007_8phxn",
+    "text": "Tin nhắn đã bị thu hồi",
+    "isPrivate": true,
+    "isPinned": false,
+    "isDeleted": true,
+    "replyTo": null,
+    "createdAt": "2026-09-21T11:22:32.331Z"
+  },
+  {
+    "id": "msg_1790051265290_d68y3",
+    "sender": "user_1789984490007_8phxn",
+    "senderUserId": "user_1789984490007_8phxn",
+    "senderName": "ThanhDat",
+    "receiver": null,
+    "text": "heellooooo nhooo",
+    "isPrivate": false,
+    "isPinned": false,
+    "isDeleted": false,
+    "replyTo": null,
+    "createdAt": "2026-09-22T04:27:45.291Z"
+  },
+  {
+    "id": "msg_1790051290508_k3wis",
+    "sender": "user_1789984490007_8phxn",
+    "senderUserId": "user_1789984490007_8phxn",
+    "senderName": "ThanhDat",
+    "receiver": null,
+    "text": "👍",
+    "isPrivate": false,
+    "isPinned": false,
+    "isDeleted": false,
+    "replyTo": null,
+    "createdAt": "2026-09-22T04:28:10.508Z"
+  },
+  {
+    "id": "msg_1790051353043_f5lkn",
+    "sender": "user_1789984490007_8phxn",
+    "senderUserId": "user_1789984490007_8phxn",
+    "senderName": "ThanhDat",
+    "receiver": null,
+    "text": "Tin nhắn đã bị thu hồi",
+    "isPrivate": false,
+    "isPinned": false,
+    "isDeleted": true,
+    "replyTo": null,
+    "createdAt": "2026-09-22T04:29:13.043Z"
+  },
+  {
+    "id": "msg_1790052982265_l4qv3",
+    "sender": "user_1789984490007_8phxn",
+    "senderUserId": "user_1789984490007_8phxn",
+    "senderName": "ThanhDat",
+    "receiver": null,
+    "text": "https://youtu.be/5RRTOU5fuNA?si=rllVPEpuRBhhdVro",
+    "isPrivate": false,
+    "isPinned": false,
+    "isDeleted": false,
+    "replyTo": null,
+    "createdAt": "2026-09-22T04:56:22.265Z"
+  }
+]
