@@ -62,6 +62,21 @@ function renderUserList(users, filterText = '') {
     }
 }
 
+// Hàm chuyển đổi văn bản: Vừa chống XSS vừa tự động nhận diện Link
+function formatMessageText(text) {
+    if (!text) return '';
+    // Escape HTML để chống XSS
+    const safeText = String(text).replace(/[&<>'"]/g, 
+        tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+    );
+    // Nhận diện URL (http, https, www)
+    const urlPattern = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])|(\bwww\.[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+    return safeText.replace(urlPattern, (match) => {
+        let href = match.toLowerCase().startsWith('www.') ? 'http://' + match : match;
+        return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="chat-link">${match}</a>`;
+    });
+}
+
 // ── Render một tin nhắn vào khung chat ──────────────────────
 function renderSingleMessage(data) {
     const messagesContainer = document.getElementById('messagesContainer');
@@ -100,7 +115,7 @@ function renderSingleMessage(data) {
         replyQuoteHTML = `
             <div class="reply-quote-box">
                 <div class="reply-quote-sender">${escapeHtml(data.replyTo.senderName)}</div>
-                <div class="reply-quote-text">${escapeHtml(data.replyTo.text)}</div>
+                <div class="reply-quote-text">${formatMessageText(data.replyTo.text)}</div>
             </div>
         `;
     }
@@ -108,7 +123,7 @@ function renderSingleMessage(data) {
     messageElement.innerHTML = `
         <div class="sender-name">${isMe ? 'Tôi' : escapeHtml(data.senderName)}</div>
         ${replyQuoteHTML}
-        <div class="msg-text-content">${data.isDeleted ? '<i>Tin nhắn đã bị thu hồi</i>' : escapeHtml(data.text)}</div>
+        <div class="msg-text-content">${data.isDeleted ? '<i>Tin nhắn đã bị thu hồi</i>' : formatMessageText(data.text)}</div>
         <div class="message-meta">
             ${pinnedTag}
             <span>${timeStr}</span>
@@ -153,3 +168,4 @@ function scrollToPinnedMessage() {
         }
     }
 }
+

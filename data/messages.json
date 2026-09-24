@@ -145,5 +145,18 @@
     "isDeleted": false,
     "replyTo": null,
     "createdAt": "2026-09-22T04:56:22.265Z"
+  },
+  {
+    "id": "msg_1790227841962_fa701",
+    "sender": "user_1789984446724_887gg",
+    "senderUserId": "user_1789984446724_887gg",
+    "senderName": "Admin",
+    "receiver": null,
+    "text": "https://www.facebook.com/share/p/19pfC4DNZb/",
+    "isPrivate": false,
+    "isPinned": false,
+    "isDeleted": false,
+    "replyTo": null,
+    "createdAt": "2026-09-24T05:30:41.962Z"
   }
 ]

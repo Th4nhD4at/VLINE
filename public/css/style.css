@@ -772,3 +772,16 @@ body.dark-theme {
 .chat-link:hover {
     color: #61aeee;
 }
+
+/* Hiệu ứng ẩn/hiện mượt mà cho thanh danh sách chat */
+.sidebar-panel {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-panel.collapsed {
+    width: 0 !important;
+    min-width: 0 !important;
+    opacity: 0;
+    overflow: hidden;
+    border-right: none;
+}

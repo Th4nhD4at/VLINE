@@ -76,3 +76,22 @@ function escapeHtml(text) {
     div.innerText = text || '';
     return div.innerHTML;
 }
+
+// Hàm bật/tắt khung danh sách chat
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar-panel');
+    const msgBtn = document.getElementById('navMessageBtn');
+    
+    if (sidebar) {
+        sidebar.classList.toggle('collapsed');
+        
+        // Cập nhật trạng thái active cho nút tin nhắn
+        if (msgBtn) {
+            if (sidebar.classList.contains('collapsed')) {
+                msgBtn.classList.remove('active');
+            } else {
+                msgBtn.classList.add('active');
+            }
+        }
+    }
+}
