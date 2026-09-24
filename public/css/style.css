@@ -773,15 +773,43 @@ body.dark-theme {
     color: #61aeee;
 }
 
-/* Hiệu ứng ẩn/hiện mượt mà cho thanh danh sách chat */
+/* Hiệu ứng ẩn/hiện mượt mà cho Sidebar */
 .sidebar-panel {
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
 }
 
+/* Khi ẩn khung danh sách */
 .sidebar-panel.collapsed {
     width: 0 !important;
     min-width: 0 !important;
     opacity: 0;
     overflow: hidden;
     border-right: none;
+    padding: 0 !important;
+}
+
+/* ================= RESPONSIVE CHO ĐIỆN THOẠI ================= */
+@media (max-width: 768px) {
+    .app-container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* Mặc định trên điện thoại: Sidebar mở ra sẽ chiếm toàn bộ phần màn hình còn lại */
+    .sidebar-panel {
+        width: calc(100vw - 64px) !important;
+    }
+
+    /* Khi ẩn Sidebar trên điện thoại: Khung chat hiện full màn hình */
+    .sidebar-panel.collapsed {
+        width: 0 !important;
+    }
+
+    /* Khung chat luôn chiếm trọn vùng còn lại */
+    .chat-workspace {
+        flex: 1;
+        min-width: 0;
+    }
 }

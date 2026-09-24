@@ -77,15 +77,16 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
-// Hàm bật/tắt khung danh sách chat
-function toggleSidebar() {
+// Hàm bật/tắt khung danh sách chat (Hỗ trợ cả PC & Mobile)
+function toggleSidebar(e) {
+    if (e) e.preventDefault(); // Ngăn ngừa trễ sự kiện cảm ứng trên điện thoại
+    
     const sidebar = document.querySelector('.sidebar-panel');
     const msgBtn = document.getElementById('navMessageBtn');
     
     if (sidebar) {
         sidebar.classList.toggle('collapsed');
         
-        // Cập nhật trạng thái active cho nút tin nhắn
         if (msgBtn) {
             if (sidebar.classList.contains('collapsed')) {
                 msgBtn.classList.remove('active');
